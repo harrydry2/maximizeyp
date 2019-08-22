@@ -44,10 +44,9 @@ html(lang='en')
     meta(name='twitter:description', content=`${card.desc}`)
     meta(property='og:image', content=`https://maximizeyp.s3.eu-west-2.amazonaws.com/${card.img}`)
     meta(name='twitter:image', content=`https://maximizeyp.s3.eu-west-2.amazonaws.com/${card.img}`)
+    noscript
+      img(height='1', width='1', src='https://www.facebook.com/tr?id=267998490543290&ev=PageView&noscript=1')
   body
-  noscript
-    img(height='1', width='1', src='https://www.facebook.com/tr?id=267998490543290&ev=PageView\
-    &noscript=1')
     block content
   block scripts
     script(src="/dist/bundle.js")
