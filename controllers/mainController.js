@@ -11,14 +11,14 @@ exports.about = async (req, res) => {
   res.render('year/about', {title: "About", card: {
     title: "Maximize Your Potential: About",
     slug: "about",
-    desc: "High-impact study skills seminars for students in Years 7 – 13",
+    desc: "Over the years, Maximize has developed a range of high-impact study skills programmes for each of the secondary school years, with each one focusing on the most relevant topics for a specific year.",
     img: "about.jpg",
   }});
 };
 
 exports.year7 = async (req, res) => {
   res.render('year/year7&8', {title: "Year 7 & 8", card: {
-    title: "Year 7 & 8 Study Skills",
+    title: "Maximize Your Potential: Year 7 & 8 Study Skills",
     slug: "year7&8",
     desc: "Our Year 7&8 program equips students with the best study practice for secondary education and encourages independent learning",
     img: "year/year7&8.jpg",
@@ -27,7 +27,7 @@ exports.year7 = async (req, res) => {
 
 exports.year9 = async (req, res) => {
   res.render('year/year9', {title: "Year 9", card: {
-    title: "Year 9 Study Skills",
+    title: "Maximize Your Potential: Year 9 Study Skills",
     slug: "year9",
     desc: "Our Year 9 program encourages students to value their learning, and to stay ‘on track’ ",
     img: "year/year9.jpg",
@@ -36,7 +36,7 @@ exports.year9 = async (req, res) => {
 
 exports.year10 = async (req, res) => {
   res.render('year/year10', {title: "Year 10", card: {
-    title: "Year 10 Study Skills",
+    title: "Maximize Your Potential: Year 10 Study Skills",
     slug: "year10",
     desc: "Our Year 10 program encourages understanding of the benefits of good study practice and of taking ownership of their learning",
     img: "year/year10.jpg",
@@ -45,7 +45,7 @@ exports.year10 = async (req, res) => {
 
 exports.year11 = async (req, res) => {
   res.render('year/year11', {title: "Year 11", card: {
-    title: "Year 11 Study Skills",
+    title: "Maximize Your Potential: Year 11 Study Skills",
     slug: "year11",
     desc: "Our Year 11 program equips students with revisions skills that deliver measurable results and exam ‘know-how’",
     img: "year/year11.jpg",
@@ -54,7 +54,7 @@ exports.year11 = async (req, res) => {
 
 exports.sixthform = async (req, res) => {
   res.render('year/sixth-form', {title: "Sixth Form", card: {
-    title: "Sixth Form Study Skills",
+    title: "Maximize Your Potential: Sixth Form Study Skills",
     slug: "sixth-form",
     desc: "Our Sixth Form program equips students with the skills to cope with the demands of A Level and IB study",
     img: "year/sixthform.jpg",
@@ -63,7 +63,7 @@ exports.sixthform = async (req, res) => {
 
 exports.testimonials = async (req, res) => {
   res.render('testimonials', {card: {
-    title: "Maximize Your Potential Testimonials",
+    title: "Maximize Your Potential: Testimonials",
     slug: "testimonials",
     desc: "A collection of testimonials from schools who have experienced Maximize Your Potential sessions",
     img: "Schools/MaxImg2.jpg",
@@ -72,8 +72,8 @@ exports.testimonials = async (req, res) => {
 
 exports.blog = async (req, res) => {
   res.render('blog', {card: {
-    title: "How to live the focused life",
-    slug: "blog/how-to-live-the-focused-life",
+    title: "Maximize Your Potential: Blog",
+    slug: "blog",
     desc: "Study skills tips and advice from undergraduates and leading educationalists",
     img: "19blog/19blog1.jpg",
   }});
