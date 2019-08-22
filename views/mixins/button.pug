@@ -1,0 +1,4 @@
+mixin button(text, link="", eoSubmit="")
+  a(href=`${link}` class=`${eoSubmit}`)
+    .button #{text}
+      span.icons__buttonArrow!=icon("buttonArrow")

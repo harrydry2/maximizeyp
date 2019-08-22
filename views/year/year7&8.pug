@@ -1,0 +1,38 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year8.mp4" playsinline="playsinline" preload="auto" poster="https://s3.amazonaws.com/harrydry/federerPoster.png" onclick="this.paused ? this.play() : this.pause();")
+    .year__inner
+      h1=title
+      p Equips students with the best study practice for secondary education and encourages independent learning.
+      p Aims to instil the importance of being organised and having a ‘can-do’ attitude.  Encourages participation in extra-curricular activities to develop character and learn new skills.
+      h2 Study Skills
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Goal setting
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Organisation
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Listening & Focus
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Positive attitude
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Mapping
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Test preparation
+      +button("Get in touch", "/#git")
+  +footer()

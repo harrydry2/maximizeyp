@@ -1,0 +1,43 @@
+.header
+  z-index: 2
+  width: 100%
+  position: fixed
+  top: 0
+  z-index: 100
+  transition: all .3s ease
+  &__inner
+    max-width: 1240px
+    margin: 0 auto
+    padding: 4rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: all .4s ease
+    @media (max-width: 1023px)
+      padding: 2.6rem 2rem
+  &__big
+    img
+      height: 3.8rem
+  &__menu
+    display: none
+    cursor: pointer
+    @media (max-width: 1023px)
+      display: block
+
+.menuActive
+  opacity: 1
+
+.menuIcon
+  & > *
+    fill: $black
+
+.headerScroll
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.035)
+  transition: all .4s ease
+  background-color: white
+
+.headerScrollInner
+  transition: all .3s ease
+  padding: 2.6rem 4rem
+  @media (max-width: 1023px)
+    padding: 1.7rem 2rem

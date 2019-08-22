@@ -1,0 +1,48 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/footer
+include ../mixins/button
+include ../mixins/mobilemenu
+
+block content
+  .blogs
+    +mobilemenu()
+    +header()
+    .specBlog
+      .specBlog__top
+        img(src=`https://maximizeyp.s3.eu-west-2.amazonaws.com/${card.img}`, alt="")
+        .specBlog__top-text=card.title
+      .content
+        p We’ve all been there. You’ve just settled down for some homework and your phone pings. Someone in the group chat has sent a video: “Lionel Messi, Skills & Goals HD”.
+        p ‘Just this one video,’ you say to yourself … but two hours (and several Messi compilations) later and you still haven’t touched your homework.
+        p This pattern is hardly surprising. Research from!{' '}
+          a(href="https://www.ics.uci.edu/~gmark/chi08-mark.pdf" target="_blank") Gloria Mark
+          |!{' '}at the University of California Irvine shows that even after the smallest distraction it takes an average of 23 minutes to regain focus and get back to the task at hand. Knowing how hard it is to regain focus, the best solution is to eliminate all distractions in the first place.
+        h2 1. Download Self Control
+        p
+          a(href="https://selfcontrolapp.com/" target="_blank") Self Control
+          |!{' '}is a free App that lets you block access to distracting websites. Just set the period of time to block you want them blocked for and you’ll be unable to access the sites - even if you restart your computer!
+        h2 2. Deactivate Facebook in the run-up to Exams
+        p Get together with a group of friends and deactivate Facebook in the run-up to exams. Your productivity will soar.
+        p If you want to make this more interesting, each of you should put £10 into a kitty. If anyone crumbles and logs back into Facebook they lose their tenner.
+        h2 3. Use Post It Notes
+        p A bit of a weird one, but bear with me.
+        p.list.list__top 1. Write each of the tasks you have to do on separate post-it notes.
+        p.list 2. Pick one task from the pile and stick the note on your computer.
+        p.list.list__bottom 3. And when you finish the task, scrunch up the Post It. Simple!
+        img(src="https://s3.eu-west-2.amazonaws.com/maximizeyp/blog/InnerBlog3Img.jpg", alt="Post it Notes Revision")
+        p Soon you’ll have a pile of scrunched-up Post-It notes, each representing one of your tasks, on the floor next to you.
+        h2 4. Airplane Mode
+        p When you start working switch your phone to Airplane Mode. Simple! Make it a habit! You’ll get your work done quicker and have more time to actually have fun!
+        h2 Summing Up...
+        p We are living in the ‘attention’ economy. The algorithms of Facebook, You Tube, Netflix etc … are all specifically designed to grab your attention and glue you to their site. That’s how they succeed. The more time you spend on their site, the more ads you see and the more money they make.
+        p Whilst, this is perhaps unsettling, what it does mean is that being able to single-mindedly focus and resist distraction is one of the most important modern day skills.
+        p It is only going to get more difficult to ‘live the focused life’. But the rewards are greater than ever.
+        .undera
+          .undera__center
+            .undera__center-text Share on Twitter
+            a.undera__center-twitter(href=`https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.maximizeyourpotential.co.uk/${card.slug}&via=maximizeyp%20&text=${encodeURI(card.title)}` target="_blank")!=icon("twitter")
+        .specButton
+          +button("Get in touch", "/#git")
+    +footer()

@@ -1,0 +1,11 @@
+mixin monial(img, text, teacher, school)
+  .monial
+    img(src=`https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/${img}.jpg`, alt=`${Teacher}, ${School}`)
+    .monial__inner
+      .monial__inner-quote “
+      p=text
+      .monial__inner-inner
+        .monial__inner-inner-teacher=teacher
+        .monial__inner-inner-bullet •
+        .monial__inner-inner-school=school
+

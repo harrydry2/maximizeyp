@@ -1,0 +1,61 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/about.jpg")
+    .year__inner
+      h1=title
+      p Over the years, Maximize has developed a range of high-impact study skills programmes for each of the secondary school years, with each one focusing on the most relevant topics for a specific year.
+      p We are trusted by hundreds of schools who ask us to work with their students, year on year, and equip them with the skills they need to cope with the demands of secondary education.
+      p We want the students to understand!{' '}
+        span.bold the benefits of good study practice
+        | , and to!{' '}
+        span.bold take ownership of their learning
+        | , and we provide them with a range of!{' '}
+        span.bold evidence-based study skills
+        |!{' '}which will deliver measurable results. We want to encourage a!{' '}
+        span.bold ‘can-do’ attitude
+        | , and to understand the importance of!{' '}
+        span.bold resilience
+        | .
+      p But it’s not just schools which recognise the value of our sessions.  Last year, a staggering!{' '}
+        span.bold 94%
+        |!{' '}of the students* we worked with rated their Maximize session either!{' '}
+        span.bold ‘very good’
+        |!{' '}or!{' '}
+        span.bold ‘excellent’
+        | , and the comments on their evaluation forms illustrated!{' '}
+        span.bold a real intention to take action
+        | .
+      p * based on evaluations from!{' '}
+        span.bold 26,450
+        |!{' '}students
+      h2 Key features
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Interactive and engaging
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Evidenced-based study skills
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Best study practice
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Tailored to your needs
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Presenters of the highest calibre
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Support literature for students
+      +button("Get in touch", "/#git")
+  +footer()

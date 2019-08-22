@@ -1,0 +1,37 @@
+include button
+
+mixin wide()
+  .wide
+    .wide__handle.wide__handle-next
+      span!=icon("wideRight")
+    .wide__handle.wide__handle-prev
+      span!=icon("wideLeft")
+    .wide__extra
+      figure
+        img.wide__extra-active.bamn0(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year7&8.jpg", alt="Year 7&8 Study Skills")
+        img.bamn1(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year9.jpg", alt="Year 9 Study Skills")
+        img.bamn2(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10.jpg", alt="Year 10 Study Skills")
+        img.bamn3(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year11.jpg", alt="Year 11 Study Skills")
+        img.bamn4(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/sixthform.jpg", alt="Sixth Form Study Skills")
+      .stories
+        ul
+          .wide__right.wide__right-active
+            .wide__right-title Year 7&8
+            .wide__right-text Equips students with the best study practice for secondary education and encourages independent learning.
+            +button("Learn more", "/year7&8")
+          .wide__right
+            .wide__right-title Year 9
+            .wide__right-text Encourages students to value their learning, and to stay ‘on track’.
+            +button("Learn more", "/year9")
+          .wide__right
+            .wide__right-title Year 10
+            .wide__right-text Encourages understanding of the benefits of good study practice and of taking ownership of their learning.
+            +button("Learn more", "/year10")
+          .wide__right
+            .wide__right-title Year 11
+            .wide__right-text Equips students with revisions skills that deliver measurable results and exam ‘know-how’.
+            +button("Learn more", "/year11")
+          .wide__right
+            .wide__right-title Sixth Form
+            .wide__right-text Equips students with the skills to cope with the demands of A Level and IB study.
+            +button("Learn more", "/sixth-form")

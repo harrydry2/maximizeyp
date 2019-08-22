@@ -1,0 +1,21 @@
+extends main
+
+include mixins/header
+include mixins/button
+include mixins/footer
+include mixins/blog
+include mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  .testimonials
+    +header()
+    .container.c1
+      .c2__buttonWrapper
+        h2 Blog
+      h1 A collection of practical exam tips and tricks
+      +blog("how-to-live-the-focused-life", "19blog1", "How to live the focused life", "The Year 10 programme customers to pay merchants directly from their bank accounts, which guarantees")
+      +blog("how-to-nail-your-personal-statement", "19blog2", "How to nail your personal statement", "The Year 10 programme customers to pay merchants directly from their bank accounts, which guarantees")
+      +blog("stress-is-your-best-friend", "19blog4", "Stress - Your Best Friend and Worst Enemy", "The Year 10 programme customers to pay merchants directly from their bank accounts, which guarantees")
+      +blog("read-the-exam-specification", "19blog3", "The Revision Tip that Only the Best Students Have Heard of", "What one single thing do all high-achieving students do? The answer is simple. They all use the exam specification")
+    +footer()

@@ -1,0 +1,23 @@
+extends main
+
+include mixins/header
+include mixins/button
+include mixins/footer
+include mixins/mobilemenu
+include mixins/monial
+
+block content
+  +mobilemenu()
+  .testimonials
+    +header()
+    .container.c1
+      .c2__buttonWrapper
+        h2 Testimonials
+      h1 Trusted by schools up and down the UK
+      +monial("MaxImg1", '92% voted Maximize Excellent or Very Good. The best study skills provider you will see.', "Andy Green", "Copleston School")
+      +monial("MaxImg2", 'The presenters were first-class and the feedback from our students has been outstanding.', "Sara Bentley", "The Snaith School")
+      +monial("MaxImg3", 'Fantastic response! 99% of our Year 11 students rated the session either Excellent or Very Good.', "Sarah Roberts", "Didcot Girls’ School")
+      +monial("MaxImg4", 'We’ve used Maximize for over 10 years ... the feedback is always resoundingly positive.', "Kathryn Sanders", "St Joseph’s College")
+      +monial("MaxImg5", 'Superb presenters who held the students’ attention. Feedback 97% Excellent or Very Good.', "Greg Dewar", "Thorpe School")
+      +monial("MaxImg6", 'Excellent day ... something for every pupil to take from the session. I highly recommend.', "Ben Cheeseman", "Rednock School")
+    +footer()
