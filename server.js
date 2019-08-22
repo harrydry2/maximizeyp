@@ -8,7 +8,9 @@ const compression = require('compression');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  `mongodb+srv://harrydry:DavidLuiz4@cluster0-fjao3.mongodb.net/test?retryWrites=true&w=majority`,
+  `mongodb+srv://harrydry:${
+    process.env.PWORD
+  }@cluster0-fjao3.mongodb.net/test?retryWrites=true&w=majority`,
   { useNewUrlParser: true }
 );
 
