@@ -1,0 +1,25 @@
+include button
+
+mixin git()
+  .gitOuter#git
+    .git
+      h1 Get in touch
+      .git__contact
+        .git__contact-inner
+          !=icon("mail")
+          .git__contact-mail1 info@maximizeyourpotential.co.uk
+        .git__contact-inner
+          !=icon("phone")
+          .git__contact-mail1 01243 572773
+      form(action="/subscribe" method="POST")
+        .git__body
+          .git__body-inner.git__body-inner-one
+            input(type="text" name="firstName" placeholder="Name *" class="inputName")
+          .git__body-inner.git__body-inner-two
+            input(type="text" name="email" placeholder="Email *" class="inputEmail")
+            input(type="text" name="company" placeholder="School *" class="inputSchool")
+          .git__body-inner.git__body-inner-two
+            textarea(name="enquiry" placeholder="How can we help? * (We reply in 24 hrs)" class="inputDesc")
+        .git__submit
+          +button("Submit", "/subscribe", "eoSubmit")
+          .git__submit-red

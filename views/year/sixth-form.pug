@@ -1,0 +1,38 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/sixthform1.jpg")
+    .year__inner
+      h1=title
+      p Equips students with the skills to cope with the demands of A Level and IB study with an emphasis on the importance of independent learning and effective time management.
+      p Aims to instil good study practice, and encourages them to persevere, to learn from failure and be resilient.
+      h2 Study Skills
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Goal setting
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Independent learning
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Effective planning
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Memory techniques
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Revision techniques
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Exam preparation
+      +button("Get in touch", "/#git")
+  +footer()

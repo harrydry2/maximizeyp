@@ -1,0 +1,45 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/footer
+include ../mixins/button
+include ../mixins/mobilemenu
+
+block content
+  .blogs
+    +header()
+    +mobilemenu()
+    .specBlog
+      .specBlog__top
+        img(src=`https://maximizeyp.s3.eu-west-2.amazonaws.com/${card.img}`, alt="")
+        .specBlog__top-text=card.title
+      .content
+        h2 1. Don't be Vague. Dig Into One Niche Topic
+        p When writing your personal statement, you need to be aware that the academics who read it will probably be reading!{' '}
+          span.bold literally hundreds
+          | ! So, you need to make it as original as possible, and this is achieved by its content.
+        p If you are applying for Economics, for example, know that the majority of students will reference a set of popular books, and make similar comments about them. It is better to delve into one!{' '}
+          span.bold niche topic
+          | , and illustrate a degree of understanding and appreciation for nuance within the topic. Try and tell the admissions tutor something they don't already know.
+        p If you can, develop a narrative, such as, ‘I read X and was fascinated by the idea that Y … As a consequence, I read Z and realised that my earlier understand was ….’
+        h2 2. Watch Your Writing Style
+        p Be careful you don’t fall into the trap of using language that is unnecessarily verbose. It can be a telltale sign that a student is trying to compensate for lack of content.
+        p Be wary, too, of making exaggerated claims, and be honest. Did your Bronze D of E really build your resilience? Read your draft aloud to family and trusted friends. If they are laughing at what you have said, there is a fair chance the academics will be, too! Keep your sentences simple, and your emotions in check.
+        h2 3. Start Early and Get Feedback
+        p There is no doubt that writing your personal statement is a stressful and arduous task. It is best to!{' '}
+          span.bold start early
+          | , in particular, with regard to thinking how you can show your enthusiasm for your chosen course.
+        p Expect to do several drafts. It should be your own work and have your voice behind it, but you should listen to feedback from all available resources: teachers, friends, parents. You only have 47 Lines. Make sure you make them all count.
+        h2 4. Go Above and Beyond
+        p Remember, your personal statement is an opportunity to write about why you want to study the subject you have chosen at university. The best way to make such a case is to detail a series of things you have done which illustrate your!{' '}
+          span.bold
+          |!{' '}passion for the course.
+        p Entering essay competitions and undertaking independent study are one way to show that you are sufficiently interested in the subject to go ‘above and beyond’ what you are set at school. Alternatively, you could read books on a particular topic and review them in a blog or the school’s magazine, if it has one. or, you could read several on the same topic and compare them.
+        p Your personal statement is a chance to ‘bank’ this hard work, and to show the universities that your talk is backed up by action. Writing a good personal statement that really stands out starts much earlier than when your teachers first tell you to start thinking about it. It’s a long game!
+        .undera
+          .undera__center
+            .undera__center-text Share on Twitter
+            a.undera__center-twitter(href=`https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.maximizeyourpotential.co.uk/${card.slug}&via=maximizeyp%20&text=${encodeURI(card.title)}` target="_blank")!=icon("twitter")
+        .specButton
+          +button("Get in touch", "/#git")
+    +footer()

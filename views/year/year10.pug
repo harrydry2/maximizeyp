@@ -1,0 +1,39 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10.mp4" playsinline="playsinline" preload="auto" poster="https://s3.amazonaws.com/harrydry/federerPoster.png" onclick="this.paused ? this.play() : this.pause();")
+    .year__inner
+      h1=title
+      p Encourages students to understand the benefits of good study practice, and to take more ownership of their learning now that they have embarked on their GCSE courses.
+      p Equips them with revision skills that deliver results and exam know-how.
+      p Emphasises the importance of being resilient and learning from failure.
+      h2 Study Skills
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Goal setting
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Teamwork
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Mapping
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Independent learning
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Revision techniques
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Exam preparation
+      +button("Get in touch", "/#git")
+  +footer()

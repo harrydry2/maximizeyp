@@ -1,0 +1,19 @@
+mixin mobilemenu()
+  .mMenu
+    .mMenu__cross!=icon("cross")
+    .mMenu__header.mMenu__header-first Year groups
+    a(href="/year7&8").mMenu__subheader.mMenu__subheader-first Year 7&8
+    a(href="/year9").mMenu__subheader Year 9
+    a(href="/year10").mMenu__subheader Year 10
+    a(href="/year11").mMenu__subheader Year 11
+    a(href="/sixth-form").mMenu__subheader Sixth Form
+    .mMenu__header.mMenu__header-second More
+    a(href="/about").mMenu__subheader.mMenu__subheader-first About
+    a(href="/testimonials").mMenu__subheader Testimonials
+    a(href="/blog").mMenu__subheader Blog
+    .mMenu__bottom
+      a.mMenu__bottom-left.flipPhone(href="/#git") Get in touch
+      .mMenu__bottom-right.headerWhite
+        a.footer__icons-actual(href="https://twitter.com/maximizeyp" target="_blank")!=icon("twitter")
+        a.footer__icons-actual(href="https://www.youtube.com/user/MaximizeGroup" target="_blank")!=icon("youtube")
+        a.footer__icons-actual(href="https://www.facebook.com/MaximizeYP/" target="_blank")!=icon("facebook")

@@ -1,0 +1,6 @@
+mixin blog(slug, img, title, desc)
+  .blog
+    a(href=`/blog/${slug}`)
+      img(src=`https://maximizeyp.s3.eu-west-2.amazonaws.com/19blog/${img}.jpg`, alt=``)
+      .blog__header=title
+      .blog__subheader=desc

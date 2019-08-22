@@ -1,0 +1,38 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year93.mp4" playsinline="playsinline" preload="auto" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year9Poster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    .year__inner
+      h1=title
+      p Encourages students to value their learning, and to stay ‘on track’ as they progress through secondary education.
+      p Aims to equip them with study skills for revision that deliver results. Emphasises the importance of having goals, following them through, and persevering.
+      h2 Study Skills
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Goal setting
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Organisation
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Mapping
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Retrieval practice
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Revision techniques
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Exam preparation
+      +button("Get in touch", "/#git")
+  +footer()

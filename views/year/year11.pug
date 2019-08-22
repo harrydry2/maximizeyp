@@ -1,0 +1,38 @@
+extends ../main
+
+include ../mixins/header
+include ../mixins/button
+include ../mixins/footer
+include ../mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .year
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year11.mp4" playsinline="playsinline" preload="auto" poster="https://s3.amazonaws.com/harrydry/federerPoster.png" onclick="this.paused ? this.play() : this.pause();")
+    .year__inner
+      h1=title
+      p Equips students with revision skills that deliver measurable results and exam ‘know-how’.
+      p Encourages them to have a clear idea of what they are aiming for, and the steps they need to take to get there.  Emphasises the importance of effective time management to help them feel in control of their learning, and minimise stress.
+      h2 Study Skills
+      .ticks
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Goal setting
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Retrieval practice
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Revision techniques
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Time management
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Stress management
+        .ticks__inner
+          !=icon("check")
+          .ticks__inner-text Exam practice
+      +button("Get in touch", "/#git")
+  +footer()

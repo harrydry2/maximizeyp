@@ -3,7 +3,18 @@ const expressStaticGzip = require('express-static-gzip');
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const compression = require('compression');
+
+mongoose.Promise = global.Promise;
+mongoose.connect(
+  `mongodb+srv://harrydry:${
+    process.env.PWORD
+  }@cluster0-fjao3.mongodb.net/test?retryWrites=true&w=majority`,
+  { useNewUrlParser: true }
+);
+
+require('./models/Emails.js');
 
 const fs = require('fs');
 
