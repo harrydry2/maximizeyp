@@ -19,7 +19,7 @@ function submitMail(button, inputName, inputEmail, inputSchool, inputDesc, red) 
       });
       if (data.email === 'true') {
         red.style.color = '#00c26e';
-        red.innerText = `Great - We'll be in touch within 24hrs`;
+        red.innerText = `We'll be in touch within 24hrs`;
       }
     } else {
       red.style.color = '#D0021B';

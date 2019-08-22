@@ -3,7 +3,7 @@ exports.home = async (req, res) => {
     title: "Maximize Your Potential: Motivational study skills for schools",
     slug: "",
     desc: "High-impact study skills seminars for students in Years 7 – 13",
-    img: "19blog/19blog2.jpg",
+    img: "Schools/MaxImg2.jpg",
   }});
 };
 
@@ -12,7 +12,7 @@ exports.about = async (req, res) => {
     title: "Maximize Your Potential: About",
     slug: "about",
     desc: "High-impact study skills seminars for students in Years 7 – 13",
-    img: "abou.jpg",
+    img: "about.jpg",
   }});
 };
 
@@ -83,8 +83,8 @@ exports.blog1 = async (req, res) => {
   res.render('blog/how-to-live-the-focused-life', {card: {
     title: "How to live the focused life",
     slug: "blog/how-to-live-the-focused-life",
-    desc: "Motivational Study skills for Year 7 & 8",
-    img: "19blog/19blog1.jpg",
+    desc: "Practical advice from an undergraduate student to protect yourself from time-wasting distractions",
+    img: "19blog/19blog3.jpg",
   }});
 };
 
@@ -92,25 +92,25 @@ exports.blog2 = async (req, res) => {
   res.render('blog/how-to-nail-your-personal-statement', {card: {
     title: "How to nail your personal statement",
     slug: "blog/how-to-nail-your-personal-statement",
-    desc: "Motivational Study skills for Year 7 & 8",
+    desc: "How to distinguish ‘good’ stress from ‘bad’ stress, and advice on how to manage the latter.",
     img: "19blog/19blog2.jpg",
   }});
 };
 
 exports.blog3 = async (req, res) => {
   res.render('blog/stress-is-your-best-friend', {card: {
-    title: "Stress - Your Best Friend and Worst Enemy",
+    title: "Stress - Your best friend and worst enemy",
     slug: "blog/stress-is-your-best-friend",
-    desc: "Motivational Study skills for Year 7 & 8",
+    desc: "How to distinguish ‘good’ stress from ‘bad’ stress, and advice on how to manage the latter.",
     img: "19blog/19blog4.jpg",
   }});
 };
 
 exports.blog4 = async (req, res) => {
   res.render('blog/read-the-exam-specification', {card: {
-    title: "The Revision Tip that Only the Best Students Have Heard of",
+    title: "The revision tip that only the best students know",
     slug: "blog/read-the-exam-specification",
-    desc: "Motivational Study skills for Year 7 & 8",
+    desc: "What one single thing to all high-achieving students do? The answer is simple. They all use the exam specification",
     img: "19blog/19blog3.jpg",
   }});
 };

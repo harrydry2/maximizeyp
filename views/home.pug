@@ -17,9 +17,13 @@ block content
     .container.c1
       h2 Study skills to empower students
       h1 High-impact study skills seminars for students in Years 7 – 13
-      +button("Get in touch")
-    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/home.mp4" class="p1video" playsinline="playsinline" autoplay="autoplay" muted="true" controls="true" preload="auto" poster="https://s3.amazonaws.com/harrydry/federerPoster.png" onclick="this.paused ? this.play() : this.pause();")
-    .video__subtitle1 Click to unmute
+      .zenscroll
+        .button Get in touch
+          span.icons__buttonArrow!=icon("buttonArrow")
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/homeShorter.mp4" class="p1video" playsinline="playsinline" autoplay="autoplay" muted="true" controls="true" preload="auto" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/homePoster.jpg")
+    .video__subtitle
+      .video__subtitle-text Tap for volume
+      .video__subtitle-icon!=icon("volume")
     .container.c2
       h2 Programmes for Years 7 – 13
       h1 Improved outcomes in attainment, student confidence and resilience
@@ -32,13 +36,13 @@ block content
       +monial("MaxImg1", '92% voted Maximize Excellent or Very Good. The best study skills provider you will see.', "Andy Green", "Copleston School")
       +monial("MaxImg2", 'The presenters were first-class and the feedback from our students has been outstanding.', "Sara Bentley", "The Snaith School")
     video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/home5.mp4" class="p2video" playsinline="playsinline" preload="auto" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/home99poster.jpg" onclick="this.paused ? this.play() : this.pause();")
-    .video__subtitle Maximize in the Cardinal Vaughn School
+    .video__subtitle2 Maximize in the Cardinal Vaughn School
     .container.grey
       .c2__buttonWrapper
         h2 Blog
         +button1("Read more", "/blog")
       h1 A collection of practical exam tips and tricks
-      +blog("how-to-live-the-focused-life", "19blog1", "How to live the focused life", "The Year 10 programme customers to pay merchants directly from their bank accounts, which guarantees")
-      +blog("how-to-nail-your-personal-statement", "19blog2", "How to nail your personal statement", "The Year 10 programme customers to pay merchants directly from their bank accounts, which guarantees")
+      +blog("how-to-live-the-focused-life", "19blog1", "How to live the focused life", "Practical advice from an undergraduate student to protect yourself from time-wasting distractions")
+      +blog("how-to-nail-your-personal-statement", "19blog2", "How to nail your personal statement", "How to write an honest and original personal statement that really stand outs.  It’s a long game!")
     +git()
     +footer()
