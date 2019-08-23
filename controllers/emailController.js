@@ -15,7 +15,7 @@ exports.subscribe = async (req, res) => {
     });
     const mailOptions = {
       from: `${name} <harrydryofficial@gmail.com>`, // sender address
-      to: "jeremydry@hotmail.co.uk, info@maximizeyourpotential.co.uk", // list of receivers
+      to: "jeremydry@hotmail.com, info@maximizeyourpotential.co.uk", // list of receivers
       subject: "Enquiry from our Brand Brand New Website!", // Subject line
       html: `
         DO NOT REPLY TO THIS EMAIL
