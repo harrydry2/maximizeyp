@@ -3,5 +3,15 @@ mixin header(activePage)
     .header__inner
       a.header__big(href="/")
         img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/wMaxLogo.png", alt="Maximize Your Potential Logo")
-      .header__icons
+      .header__center
+        a.header__center-text(href="/year7&8") Year 7 & 8
+        a.header__center-text(href="/year9") Year 9
+        a.header__center-text(href="/year10") Year 10
+        a.header__center-text(href="/year11") Year 11
+        a.header__center-text(href="sixth-form") Sixth Form
+        a.header__center-text(href="/testimonials") Testimonials
+        a.header__center-text(href="/blog") Blog
+        a.header__center-icons(href="https://twitter.com/maximizeyp" target="_blank")!=icon("twitter")
+        a.header__center-icons(href="https://www.youtube.com/user/MaximizeGroup" target="_blank")!=icon("youtube")
+        a.header__center-icons(href="https://www.facebook.com/MaximizeYP/" target="_blank")!=icon("facebook")
       .header__menu!=icon("menuIcon")

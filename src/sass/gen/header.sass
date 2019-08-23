@@ -6,9 +6,9 @@
   z-index: 100
   transition: all .3s ease
   &__inner
-    max-width: 1240px
+    max-width: 1120px
     margin: 0 auto
-    padding: 4rem
+    padding: 4rem 6rem
     display: flex
     align-items: center
     justify-content: space-between
@@ -23,6 +23,12 @@
     cursor: pointer
     @media (max-width: 1023px)
       display: block
+  &__center
+    @media (max-width: 1023px)
+      display: none
+    &-text
+      font-size: 1.6rem
+      margin: 0 1rem
 
 .menuActive
   opacity: 1
@@ -38,6 +44,6 @@
 
 .headerScrollInner
   transition: all .3s ease
-  padding: 2.6rem 4rem
+  padding: 2.6rem 6rem
   @media (max-width: 1023px)
     padding: 1.7rem 2rem

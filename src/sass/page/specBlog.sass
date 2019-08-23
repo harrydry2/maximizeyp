@@ -1,5 +1,8 @@
 .specBlog
   margin-top: 9rem
+  @media screen and (min-width: 768px)
+    max-width: 60rem
+    margin: 13rem auto 0 auto
   &__top
     height: 22.4rem
     width: 100%
@@ -52,6 +55,8 @@
     font-size: 1.7rem
     line-height: 1.8
     padding: .7rem 2rem
+    @media screen and (min-width: 768px)
+      padding: .7rem 0
   h2
     font-size: 1.6rem
     font-weight: bold
@@ -59,6 +64,8 @@
     text-transform: uppercase
     line-height: 1.4
     color: $p
+    @media screen and (min-width: 768px)
+      padding: 1.6rem 0
   .inwardSpeech
     font-style: italic
     padding: 1.2rem 5rem
@@ -90,7 +97,8 @@
       border: none
       border-top: 5px solid #ffdddd
       border-bottom: 5px solid #ffdddd
-
+    @media screen and (min-width: 768px)
+      width: 100%
 
 .undera
   width: 100%

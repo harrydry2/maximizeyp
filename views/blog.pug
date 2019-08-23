@@ -8,14 +8,15 @@ include mixins/mobilemenu
 
 block content
   +mobilemenu()
+  +header()
   .testimonials
-    +header()
     .container.c1
       .c2__buttonWrapper
         h2 Blog
       h1 A collection of practical exam tips and tricks
-      +blog("how-to-live-the-focused-life", "19blog1", "How to live the focused life", "Practical advice from an undergraduate student to protect yourself from time-wasting distractions")
-      +blog("how-to-nail-your-personal-statement", "19blog2", "How to nail your personal statement", "How to write an honest and original personal statement that really stand outs.  It’s a long game!")
-      +blog("stress-is-your-best-friend", "19blog4", "Stress - Your best friend and worst enemy", "How to distinguish ‘good’ stress from ‘bad’ stress, and advice on how to manage the latter.")
-      +blog("read-the-exam-specification", "19blog3", "The revision tip that only the best students know", "What one single thing to all high-achieving students do?  The answer is simple!  They all use the exam specification")
-    +footer()
+      .blogGrid
+        +blog("how-to-live-the-focused-life", "19blog1", "How to live the focused life", "Practical advice from an undergraduate student to protect yourself from time-wasting distractions")
+        +blog("how-to-nail-your-personal-statement", "19blog2", "How to nail your personal statement", "How to write an honest and original personal statement that really stand outs.  It’s a long game!")
+        +blog("stress-is-your-best-friend", "19blog4", "Stress - Your best friend and worst enemy", "How to distinguish ‘good’ stress from ‘bad’ stress, and advice on how to manage the latter.")
+        +blog("read-the-exam-specification", "19blog3", "The revision tip that only the best students know", "What one single thing to all high-achieving students do?  The answer is simple!  They all use the exam specification")
+  +footer()

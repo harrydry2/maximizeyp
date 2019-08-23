@@ -20,9 +20,12 @@
       font-size: 1.3rem
       margin-top: 2rem
       display: none
+      @media (max-width: 840px)
+        font-size: 1.5rem
   .button
     margin-top: 4rem
   h1
+    text-align: center
   &__contact
     display: flex
     margin-top: 2rem
@@ -32,7 +35,7 @@
       margin-top: 2.2rem
     &-inner
       display: flex
-      margin: 0 3.5rem
+      margin: 1rem 3.5rem 1rem 3.5rem
       align-items: center
       @media (max-width: 840px)
         &:last-child
@@ -67,11 +70,6 @@
         @media (max-width: 840px)
           margin-top: 0
       &-one
-        input
-          &:last-child
-            margin-left: 2rem
-            @media (max-width: 840px)
-              margin-left: 0
       &-two
         textarea
           font-family: "Circular" !important
@@ -80,7 +78,7 @@
           @media (max-width: 840px)
             width: 100%
           &:nth-child(2)
-            margin: 0 2rem
+            margin: 0 0rem 0 2rem
             @media (max-width: 840px)
               margin: 1.2rem 0 0 0
       input, textarea
