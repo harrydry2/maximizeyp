@@ -426,7 +426,8 @@ h2 {
     margin-top: 4rem; }
     .monial__inner p {
       font-size: 1.7rem;
-      line-height: 1.7; }
+      line-height: 1.7;
+      font-style: italic; }
     .monial__inner-quote {
       font-size: 16rem;
       position: absolute;
@@ -560,10 +561,10 @@ h2 {
   margin-top: 11rem; }
   @media screen and (min-width: 768px) {
     .c1 {
-      margin-top: 18rem; } }
+      margin-top: 14rem; } }
 
 .c2 {
-  margin-top: 5rem; }
+  margin-top: 6rem; }
   @media screen and (min-width: 768px) {
     .c2 {
       margin-top: 13rem; } }
