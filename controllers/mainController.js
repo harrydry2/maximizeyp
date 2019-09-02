@@ -92,7 +92,7 @@ exports.blog2 = async (req, res) => {
   res.render('blog/how-to-nail-your-personal-statement', {card: {
     title: "How to nail your personal statement",
     slug: "blog/how-to-nail-your-personal-statement",
-    desc: "How to distinguish ‘good’ stress from ‘bad’ stress, and advice on how to manage the latter.",
+    desc: "How to write an honest and original personal statement that really stand outs.  It’s a long game.",
     img: "19blog/19blog2.jpg",
   }});
 };
