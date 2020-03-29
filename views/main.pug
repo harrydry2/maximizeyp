@@ -1,6 +1,14 @@
 doctype html
 html(lang='en')
   head
+    //- Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-573FMQZ');
+    //- End Google Tag Manager
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
@@ -33,14 +41,7 @@ html(lang='en')
       }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '267998490543290');
-      fbq('track', 'PageView');
-    //- Global site tag (gtag.js) - Google Ads: 748519737
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=AW-748519737')
-    script.
-        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-748519737');
-    //- Event snippet for Enquiry from Maximize website conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.
-    script.
-      function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-748519737/1z6xCN-0sMsBELmC9uQC', 'event_callback': callback }); return false; }
+      fbq('track', 'PageView')
     title=card.title
     meta(property='og:title', content=`${card.title}`)
     meta(name='twitter:title', content=`${card.title}`)
@@ -54,6 +55,8 @@ html(lang='en')
     noscript
       img(height='1', width='1', src='https://www.facebook.com/tr?id=267998490543290&ev=PageView&noscript=1')
   body
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-573FMQZ' height='0' width='0' style='display:none;visibility:hidden')
     block content
     script.
       !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
