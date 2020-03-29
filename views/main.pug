@@ -34,6 +34,13 @@ html(lang='en')
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '267998490543290');
       fbq('track', 'PageView');
+    //- Global site tag (gtag.js) - Google Ads: 748519737
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=AW-748519737')
+    script.
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-748519737');
+    //- Event snippet for Enquiry from Maximize website conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.
+    script.
+      function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-748519737/1z6xCN-0sMsBELmC9uQC', 'event_callback': callback }); return false; }
     title=card.title
     meta(property='og:title', content=`${card.title}`)
     meta(name='twitter:title', content=`${card.title}`)
