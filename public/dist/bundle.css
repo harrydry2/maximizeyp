@@ -150,7 +150,8 @@ h2 {
 .header__center-icons .twitterSVG {
   height: 1.9rem;
   transform: translateY(4px);
-  margin-left: 2.6rem; }
+  margin-left: 2.6rem;
+  margin-right: .6rem; }
   .header__center-icons .twitterSVG > * {
     fill: #0B2340; }
 
@@ -408,6 +409,8 @@ h2 {
     margin-top: 4rem; }
     .footer__icons-actual:nth-child(2) {
       padding: 0 1.2rem; }
+    .footer__icons-actual:nth-child(3) {
+      padding: 0 1.2rem 0 0; }
   .footer__copyright {
     color: #ffffff;
     margin-top: 4rem;
