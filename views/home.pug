@@ -1,5 +1,6 @@
 extends main
 
+include mixins/banner
 include mixins/header
 include mixins/button
 include mixins/button1
@@ -11,9 +12,10 @@ include mixins/footer
 include mixins/mobilemenu
 
 block content
+  +banner()
   +mobilemenu()
   +header()
-  .home
+  .home.homeJS
     .container.c1
       h2 Study skills to empower students
       h1 High-impact study skills seminars for students in Years 7 – 13

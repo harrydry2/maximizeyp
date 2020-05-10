@@ -1,9 +1,9 @@
 include button
 
-mixin git()
-  .gitOuter#git
+mixin gitParents()
+  .gitOuter.gitOuterParents#git
     .git
-      h1 We're here to help
+      h1 Enquire now to sign up your school
       .git__contact
         .git__contact-outer
           .git__contact-inner
@@ -28,5 +28,4 @@ mixin git()
           a(href=`/subscribe` class=`eoSubmit`)
             .button Submit
               span.icons__buttonArrow!=icon("buttonArrow")
-          //- +button("Submit", "/subscribe", "eoSubmit")
           .git__submit-red.gta__1

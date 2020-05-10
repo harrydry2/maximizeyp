@@ -1,0 +1,69 @@
+extends main
+
+include mixins/banner
+include mixins/header
+include mixins/button
+include mixins/button1
+include mixins/wide
+include mixins/gitParents
+include mixins/monial
+include mixins/blog
+include mixins/footer
+include mixins/mobilemenu
+
+block content
+  //- +banner()
+  +mobilemenu()
+  +header()
+  .home.parentsJS
+    .container.c1
+      h2 Free Parents Webinars
+      h1 We're running webinars for parents to help navigate the COVID-19 chaos
+      .zenscroll
+        .button Book your school now
+          span.icons__buttonArrow!=icon("buttonArrow")
+    //- video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/homeShorter.mp4" class="p1video" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="true" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/homePoster.jpg")
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10Poster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    .video__subtitle
+      .video__subtitle-text Watch our explainer video
+      //- .video__subtitle-icon!=icon("volume")
+    .container.c2
+      .c2__buttonWrapper
+        h2 Testimonials
+        //- +button1("Read more", "testimonials")
+      h1 What schools are saying about our webinars
+      .monialGrid
+        +monial("MaxImg1", '92% voted Maximize ‘Excellent’ or ‘Very Good’. The best study skills provider you will see.', "Andy Green", "Copleston School")
+        //- +monial("MaxImg2", 'The presenters were first-class and the feedback from our students has been outstanding.', "Sara Bentley", "The Snaith School")
+    .year.parents
+      .year__inner
+        h1 What's in our parents webinars?
+        p Encourages students to understand the benefits of good study practice, and to take more ownership of their learning now that they have embarked on their GCSE courses.
+        p Equips them with revision skills that deliver results and exam know-how.
+        p Emphasises the importance of being resilient and learning from failure.
+        h2 What's covered
+        .ticks
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Goal setting
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Teamwork
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Mapping
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Independent learning
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Revision techniques
+          .ticks__inner
+            !=icon("check")
+            .ticks__inner-text Exam preparation
+        //- +button("Book your school now", "/#git")
+        .zenscroll.zenscrollParents
+          .button Book your school now
+            span.icons__buttonArrow!=icon("buttonArrow")
+    +gitParents()
+  +footer()

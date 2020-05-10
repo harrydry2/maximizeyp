@@ -2,6 +2,12 @@
   width: 100%
   padding: 7rem 0 0rem 0
 
+.gitOuterParents
+  width: 100%
+  padding: 7rem 0 0rem 0
+  @media (max-width: 840px)
+    padding: 7rem 0 0rem 0
+
 .git
   max-width: 93rem
   width: 100%
@@ -31,18 +37,33 @@
     margin-top: 2rem
     @media (max-width: 840px)
       flex-direction: column
-      align-items: center
+      // align-items: center
       margin-top: 2.2rem
+    &-outer
+      margin: 1rem 3.5rem 1rem 3.5rem
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &-below
+      margin-left: 3.8rem
+      color: #61CAA0
+      font-size: 1.6rem
+      margin-top: 0.8rem
+      font-weight: 500
+      @media (max-width: 840px)
+        margin-left: 3.4rem
+    &-below1
+      margin-left: 3.4rem
     &-inner
       display: flex
-      margin: 1rem 3.5rem 1rem 3.5rem
-      align-items: center
+      justify-content: center
+      height: 1.6rem
       @media (max-width: 840px)
         &:last-child
           margin-top: 1.4rem
     &-mail1
       font-weight: bold
-      font-size: 1.7rem
+      font-size: 1.8rem
       opacity: 0.4
       transition: all 0.3s
       margin-left: 1.4rem
@@ -53,6 +74,10 @@
       &:hover
         opacity: 0.7
         transition: all 0.3s
+      &-green
+        color: #61CAA0
+        margin-top: 0.6rem
+        font-size: 1.4rem
   form
     width: 100%
   &__body

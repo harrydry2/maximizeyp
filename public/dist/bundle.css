@@ -171,7 +171,7 @@ h2 {
 .header {
   z-index: 2;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
   transition: all .3s ease; }
@@ -230,8 +230,7 @@ h2 {
   transition: all 0.6s;
   cursor: pointer;
   text-transform: uppercase;
-  color: #ffffff;
-  max-width: fit-content; }
+  color: #ffffff; }
   .button__submit {
     border-radius: 4px;
     padding: 0.9rem 2.4rem 1.1rem 2.6rem; }
@@ -255,7 +254,7 @@ h2 {
   padding: 1.1rem 1.7rem 1.1rem 1.7rem;
   cursor: pointer;
   color: #0B2340;
-  max-width: fit-content; }
+  max-width: 13rem; }
   .button1 span {
     margin-left: 1.6rem; }
 
@@ -548,6 +547,25 @@ h2 {
     opacity: 1;
     visibility: visible; }
 
+.banner {
+  height: 6rem;
+  background: #0079FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem; }
+  .banner p {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    text-align: center; }
+    .banner p span {
+      padding-bottom: 0.1rem;
+      border-bottom: 1px solid white; }
+      @media (max-width: 840px) {
+        .banner p span {
+          border-bottom: none; } }
+
 .home h1, .testimonials h1 {
   margin-top: 2rem; }
   @media screen and (min-width: 768px) {
@@ -586,6 +604,12 @@ h2 {
   @media screen and (min-width: 768px) {
     .zenscroll {
       margin-bottom: 5rem; } }
+
+.zenscrollParents {
+  margin-bottom: 0rem; }
+  @media screen and (min-width: 768px) {
+    .zenscrollParents {
+      margin-bottom: 0rem; } }
 
 .p2video {
   margin-top: 6rem; }
@@ -688,9 +712,27 @@ h2 {
             font-size: 1.7rem;
             margin-left: 1.6rem; } }
 
+.parents {
+  background: #ffffff;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+  margin: 4rem 2rem 0rem 2rem;
+  border-radius: 4px; }
+  @media screen and (min-width: 768px) {
+    .parents {
+      max-width: 78rem;
+      margin: 4rem 0 0 0;
+      box-shadow: none; } }
+
 .gitOuter {
   width: 100%;
   padding: 7rem 0 0rem 0; }
+
+.gitOuterParents {
+  width: 100%;
+  padding: 7rem 0 0rem 0; }
+  @media (max-width: 840px) {
+    .gitOuterParents {
+      padding: 7rem 0 0rem 0; } }
 
 .git {
   max-width: 93rem;
@@ -724,18 +766,33 @@ h2 {
     @media (max-width: 840px) {
       .git__contact {
         flex-direction: column;
-        align-items: center;
         margin-top: 2.2rem; } }
+    .git__contact-outer {
+      margin: 1rem 3.5rem 1rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    .git__contact-below {
+      margin-left: 3.8rem;
+      color: #61CAA0;
+      font-size: 1.6rem;
+      margin-top: 0.8rem;
+      font-weight: 500; }
+      @media (max-width: 840px) {
+        .git__contact-below {
+          margin-left: 3.4rem; } }
+    .git__contact-below1 {
+      margin-left: 3.4rem; }
     .git__contact-inner {
       display: flex;
-      margin: 1rem 3.5rem 1rem 3.5rem;
-      align-items: center; }
+      justify-content: center;
+      height: 1.6rem; }
       @media (max-width: 840px) {
         .git__contact-inner:last-child {
           margin-top: 1.4rem; } }
     .git__contact-mail1 {
       font-weight: bold;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       opacity: 0.4;
       transition: all 0.3s;
       margin-left: 1.4rem;
@@ -747,6 +804,10 @@ h2 {
       .git__contact-mail1:hover {
         opacity: 0.7;
         transition: all 0.3s; }
+      .git__contact-mail1-green {
+        color: #61CAA0;
+        margin-top: 0.6rem;
+        font-size: 1.4rem; }
   .git form {
     width: 100%; }
   .git__body {
