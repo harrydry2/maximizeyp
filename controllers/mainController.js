@@ -12,9 +12,11 @@ exports.home = async (req, res) => {
 exports.parents = async (req, res) => {
   res.render("parents", {
     card: {
-      title: "Free Webinars for parents",
-      slug: "parents",
-      desc: "High-impact study skills seminars for students in Years 7 – 13",
+      title:
+        "Engage your students with high-impact study skills webinars — Maximize Your Potential",
+      slug: "webinars",
+      desc:
+        "We have developed a series of five 30 minute webinars for each of the secondary school year groups. The content mirrors that of the highly-acclaimed workshops we've been delivering in schools for years.",
       img: "Schools/MaxImg2.jpg"
     }
   });

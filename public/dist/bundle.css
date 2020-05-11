@@ -456,6 +456,16 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap; } }
 
+@media screen and (max-width: 768px) {
+  .parentGrid .monial:last-child {
+    display: none; } }
+
+.parentsBr {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .parentsBr {
+      display: block; } }
+
 .blog {
   margin-top: 4.4rem !important; }
   @media screen and (min-width: 768px) {
@@ -559,6 +569,9 @@ h2 {
     color: white;
     font-weight: bold;
     text-align: center; }
+    @media (max-width: 840px) {
+      .banner p {
+        font-size: 1.6rem; } }
     .banner p span {
       padding-bottom: 0.1rem;
       border-bottom: 1px solid white; }
@@ -715,12 +728,12 @@ h2 {
 .parents {
   background: #ffffff;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
-  margin: 4rem 2rem 0rem 2rem;
+  margin: 6rem 2rem 0rem 2rem;
   border-radius: 4px; }
   @media screen and (min-width: 768px) {
     .parents {
       max-width: 78rem;
-      margin: 4rem 0 0 0;
+      margin: 6rem 0 0 0;
       box-shadow: none; } }
 
 .gitOuter {
