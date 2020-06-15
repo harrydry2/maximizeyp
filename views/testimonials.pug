@@ -1,12 +1,14 @@
 extends main
 
 include mixins/header
+include mixins/banner
 include mixins/button
 include mixins/footer
 include mixins/mobilemenu
 include mixins/monial
 
 block content
+  +banner()
   +mobilemenu()
   +header()
   .testimonials

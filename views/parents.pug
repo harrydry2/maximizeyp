@@ -22,7 +22,7 @@ block content
       .zenscroll
         .button Enquire Now
           span.icons__buttonArrow!=icon("buttonArrow")
-    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/year/year10Poster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinars.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinarsPoster.jpg" onclick="this.paused ? this.play() : this.pause();")
     .video__subtitle
       .video__subtitle-text See how our webinars work
     .year.parents
@@ -62,9 +62,9 @@ block content
       .c2__buttonWrapper
         h2 Testimonials
         +button1("Read more", "testimonials")
-      h1 What schools are saying about Maximize
+      h1 What schools are saying about our webinars
       .monialGrid.parentGrid
+        +monial("MaxImg7", 'If a teenager says they were worth getting up for, that is praise indeed!', "Howard Dymock", "St Helen's School")
         +monial("MaxImg1", 'The best study skills provider you will see', "Andy Green", "Copleston School")
-        +monial("MaxImg2", 'The presenters were first-class and feedback has been outstanding', "Sara Bentley", "The Snaith School")
     +gitParents()
   +footer()

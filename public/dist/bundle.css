@@ -572,12 +572,9 @@ h2 {
     @media (max-width: 840px) {
       .banner p {
         font-size: 1.6rem; } }
-    .banner p span {
-      padding-bottom: 0.1rem;
-      border-bottom: 1px solid white; }
-      @media (max-width: 840px) {
-        .banner p span {
-          border-bottom: none; } }
+    @media (max-width: 840px) {
+      .banner p span {
+        border-bottom: none; } }
 
 .home h1, .testimonials h1 {
   margin-top: 2rem; }

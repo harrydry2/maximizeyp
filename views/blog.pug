@@ -5,8 +5,10 @@ include mixins/button
 include mixins/footer
 include mixins/blog
 include mixins/mobilemenu
+include mixins/banner
 
 block content
+  +banner()
   +mobilemenu()
   +header()
   .testimonials

@@ -3,9 +3,11 @@ extends ../main
 include ../mixins/header
 include ../mixins/button
 include ../mixins/footer
+include ../mixins/banner
 include ../mixins/mobilemenu
 
 block content
+  +banner()
   +mobilemenu()
   +header()
   .year

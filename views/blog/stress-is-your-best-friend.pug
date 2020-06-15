@@ -3,10 +3,12 @@ extends ../main
 include ../mixins/header
 include ../mixins/footer
 include ../mixins/button
+include ../mixins/banner
 include ../mixins/mobilemenu
 
 block content
   .blogs
+    +banner()
     +mobilemenu()
     +header()
     .specBlog
