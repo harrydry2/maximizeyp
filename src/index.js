@@ -8,13 +8,13 @@ import { mobileMenu } from "./modules/mobilemenu";
 if ($(".homeJS")) {
   wideFunction();
   mailSubmitFromHome();
-  // $(".video__subtitle").on("click", () => {
-  //   if ($(".p1video").muted === true) {
-  //     $(".p1video").muted = false;
-  //   } else {
-  //     $(".p1video").muted = true;
-  //   }
-  // });
+  $(".video__subtitle").on("click", () => {
+    if ($(".p1video").muted === true) {
+      $(".p1video").muted = false;
+    } else {
+      $(".p1video").muted = true;
+    }
+  });
   const button = $(".zenscroll");
   const git = $(".gitOuter");
   button.on("click", () => {
