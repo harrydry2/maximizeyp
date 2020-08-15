@@ -13,7 +13,7 @@ exports.parents = async (req, res) => {
   res.render("parents", {
     card: {
       title: "High-Impact study skills webinars — Maximize Your Potential",
-      slug: "webinars",
+      slug: "online",
       desc:
         "We have developed a series of five 30 minute webinars for each of the secondary school year groups. The content mirrors that of the highly-acclaimed workshops we've been delivering in schools for years.",
       img: "Schools/maxWebinars.jpg"

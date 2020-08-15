@@ -5,7 +5,7 @@ const mainController = require("../controllers/mainController");
 const emailController = require("../controllers/emailController");
 
 router.get("/", mainController.home);
-router.get("/webinars", mainController.parents);
+router.get("/online", mainController.parents);
 router.get("/year7&8", mainController.year7);
 router.get("/year9", mainController.year9);
 router.get("/year10", mainController.year10);
