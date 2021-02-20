@@ -17,43 +17,46 @@ block content
   +header()
   .home.parentsJS
     .container.c1
-      h2 Study skills online
-      //- h1 All our study skills seminars for Years 7-13 are available 'live' on-line or via a series of recorded webinars.
-      h1 All presentations available 'live' on-line. Recorded webinars available for key year groups.
+      //- h2 COVID-19 Support. 20% discount
+      h1 All student presentations available live online. We also offer live webinars for parents.
       .zenscroll
         .button Enquire Now
           span.icons__buttonArrow!=icon("buttonArrow")
-    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinars.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinarPoster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    //- video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinars.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/Schools/maxWebinarPoster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/maxparents.mp4" class="p1video" playsinline="playsinline" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/maxposter21.png" onclick="this.paused ? this.play() : this.pause();")
     //- .video__subtitle
     //-   .video__subtitle-text See how our webinars work
     .year.parents
       .year__inner
         h1 So, what's on offer?
-        p We can deliver all our presentations 'live' to your students via platforms such as Microsoft Teams or Zoom.
-        p But, we have also developed a series of!{' '}
-          span.bold four 25-30 minute webinars
-          |!{' '}for key year groups, the content of which mirrors that of the highly-acclaimed workshops we deliver in schools.
-        p In these uncertain times, we believe that they provide enormous flexibility as to how and when you engage with your students.
-        h2 Key Features
+        p In addition to our ‘live’ in schools sessions, we are delivering all our presentations to students online, whether they are at home or in school, via platforms such as Teams, Zoom or Google Meet.
+        p The content of these presentations mirrors that of the highly-acclaimed workshop we deliver in school.
+        p We are also offering live 60 minute presentations for parents via our own webinar platform, providing a great opportunity for parents to learn about the skills their child needs to succeed not only in education, but in life beyond the classroom, as well, and how they can play an active role in supporting them.
+        //- p We can deliver all our presentations 'live' to your students via platforms such as Microsoft Teams or Zoom.
+        //- p But, we have also developed a series of!{' '}
+        //-   span.bold four 25-30 minute webinars
+        //-   |!{' '}for key year groups, the content of which mirrors that of the highly-acclaimed workshops we deliver in schools.
+        //- p In these uncertain times, we believe that they provide enormous flexibility as to how and when you engage with your students.
+        h2 Topics covered
         .ticks
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text Engage students at school or home
+            .ticks__inner-text How to maintain motivation
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text Encourage independent learning
+            .ticks__inner-text Developing independent learning
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text Presenters of the highest calibre
+            .ticks__inner-text Planning, prioritisation & organisation
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text Evidence-based study skills
+            .ticks__inner-text Building resilience & coping with failure
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text E-notes to support sessions
+            .ticks__inner-text Effective study & revision strategies
           .ticks__inner
             !=icon("check")
-            .ticks__inner-text E-safety compliant
+            .ticks__inner-text Dealing with stress & anxiety
         //- +button("Enquire Now", "/#git")
         .zenscroll.zenscrollParents
           .button Enquire Now
