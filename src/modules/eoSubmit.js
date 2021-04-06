@@ -25,6 +25,8 @@ function submitMail(
         desc: inputDesc.value
       });
       if (data.email === "true") {
+        window.location.href =
+          "https://www.maximizeyourpotential.co.uk/thank-you";
         red.style.color = "#00c26e";
         red.innerText = `We'll be in touch within 24hrs`;
         red.classList.add("gta__1");

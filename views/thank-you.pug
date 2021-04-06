@@ -1,0 +1,20 @@
+extends main
+
+include mixins/banner
+include mixins/header
+include mixins/button
+include mixins/button1
+include mixins/wide
+include mixins/gitParents
+include mixins/monial
+include mixins/blog
+include mixins/footer
+include mixins/mobilemenu
+
+block content
+  +mobilemenu()
+  +header()
+  .home.parentsJS
+    .container.thankyou
+      h1 Thanks for your enquiry. We'll get back to you within 24 hours.
+  +footer()

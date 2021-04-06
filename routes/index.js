@@ -15,6 +15,7 @@ router.get("/sixth-form", mainController.sixthform);
 router.get("/testimonials", mainController.testimonials);
 router.get("/blog", mainController.blog);
 router.get("/about", mainController.about);
+router.get("/thank-you", mainController.thankyou);
 
 // blogs
 router.get("/blog/how-to-live-the-focused-life", mainController.blog1);

@@ -3,7 +3,7 @@ const Email = mongoose.model("Email");
 var nodemailer = require("nodemailer");
 
 exports.subscribe = async (req, res) => {
-  const {name, email, school, desc} = req.body
+  const { name, email, school, desc } = req.body;
   try {
     const mongoemail = new Email(req.body).save();
     const transporter = nodemailer.createTransport({
@@ -26,13 +26,13 @@ exports.subscribe = async (req, res) => {
         Message: ${desc}
       `
     };
+    console.log("ping");
     transporter.sendMail(mailOptions, function(err, info) {
       if (err) console.log(err, "false");
       else console.log(info, "true");
     });
-    res.json({ email: 'true' });
+    res.json({ email: "true" });
   } catch (err) {
     console.log(err.response.data.error.code);
   }
 };
-

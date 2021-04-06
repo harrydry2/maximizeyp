@@ -9,6 +9,17 @@ exports.home = async (req, res) => {
   });
 };
 
+exports.thankyou = async (req, res) => {
+  res.render("thank-you", {
+    card: {
+      title: "Thanks for your enquiry",
+      slug: "thank-you",
+      desc: "Thanks for enquiring",
+      img: "Schools/MaxImg2.jpg"
+    }
+  });
+};
+
 exports.parents = async (req, res) => {
   res.render("parents", {
     card: {
