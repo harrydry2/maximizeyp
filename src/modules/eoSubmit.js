@@ -6,23 +6,19 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function submitMail(
-  button,
-  inputName,
-  inputEmail,
-  inputSchool,
-  inputDesc,
-  red
-) {
+// inputName,
+// inputDesc,
+
+function submitMail(button, inputEmail, inputSchool, red) {
   button.on("click", async e => {
     e.preventDefault();
     red.style.display = "block";
     if (validateEmail(inputEmail.value)) {
       const { data } = await axios.post("/api/subscribe", {
-        name: inputName.value,
+        // name: inputName.value,
         email: inputEmail.value,
-        school: inputSchool.value,
-        desc: inputDesc.value
+        school: inputSchool.value
+        // desc: inputDesc.value
       });
       if (data.email === "true") {
         window.location.href =
@@ -35,19 +31,20 @@ function submitMail(
       red.style.color = "#D0021B";
       red.innerText = "Not a valid email. Try again.";
     }
-    inputName.value = "";
     inputEmail.value = "";
     inputSchool.value = "";
-    inputDesc.value = "";
+    // inputName.value = "";
+    // inputDesc.value = "";
   });
 }
 
 export function mailSubmitFromHome() {
   const button = $(".eoSubmit");
-  const inputName = $(".inputName");
   const inputEmail = $(".inputEmail");
   const inputSchool = $(".inputSchool");
-  const inputDesc = $(".inputDesc");
+  // const inputName = $(".inputName");
+  // const inputDesc = $(".inputDesc");
   const red = $(".git__submit-red");
-  submitMail(button, inputName, inputEmail, inputSchool, inputDesc, red);
+  submitMail(button, inputEmail, inputSchool, red);
+  // submitMail(button, inputName, inputEmail, inputSchool, inputDesc, red);
 }

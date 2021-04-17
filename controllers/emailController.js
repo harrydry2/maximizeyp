@@ -3,7 +3,8 @@ const Email = mongoose.model("Email");
 var nodemailer = require("nodemailer");
 
 exports.subscribe = async (req, res) => {
-  const { name, email, school, desc } = req.body;
+  // const { name, email, school, desc } = req.body;
+  const { email, school } = req.body;
   try {
     const mongoemail = new Email(req.body).save();
     const transporter = nodemailer.createTransport({
@@ -14,19 +15,16 @@ exports.subscribe = async (req, res) => {
       }
     });
     const mailOptions = {
-      from: `${name} <harrydryofficial@gmail.com>`, // sender address
+      from: `${school} <harrydryofficial@gmail.com>`, // sender address
       to: "jeremydry@hotmail.com, info@maximizeyourpotential.co.uk", // list of receivers
       subject: "Enquiry from our Brand Brand New Website!", // Subject line
       html: `
         DO NOT REPLY TO THIS EMAIL
         REPLY TO SCHOOLS EMAIL<br><br>
-        Name: ${name} <br><br>
         Email: ${email} <br><br>
         School: ${school} <br><br>
-        Message: ${desc}
       `
     };
-    console.log("ping");
     transporter.sendMail(mailOptions, function(err, info) {
       if (err) console.log(err, "false");
       else console.log(info, "true");
@@ -36,3 +34,6 @@ exports.subscribe = async (req, res) => {
     console.log(err.response.data.error.code);
   }
 };
+
+// Name: ${name} <br><br>
+// Message: ${desc}
