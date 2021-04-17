@@ -109,7 +109,7 @@ h1 {
       width: 90rem; } }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #0B2340; }
   @media screen and (min-width: 768px) {
     h2 {
@@ -119,6 +119,81 @@ h2 {
   overflow: hidden;
   position: relative;
   height: 100%; }
+
+.offerPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem; }
+  .offerPhotos img {
+    margin: 0.8rem;
+    width: 30rem;
+    flex-grow: 1; }
+
+.offerh1 {
+  font-size: 4.4rem !important;
+  width: 80rem !important; }
+  @media screen and (max-width: 768px) {
+    .offerh1 {
+      font-size: 2.4rem !important;
+      width: 100% !important;
+      margin-bottom: 4rem; } }
+
+.offerh3 {
+  width: 60rem;
+  font-size: 2rem;
+  color: #0B2340;
+  margin: 4rem auto 0 auto;
+  line-height: 1.5;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .offerh3 {
+      font-size: 1.8rem !important;
+      width: 100% !important;
+      padding: 0 2rem; } }
+
+.oticks {
+  margin: 4rem auto 0 auto !important;
+  text-align: center;
+  width: 80%; }
+  @media screen and (max-width: 768px) {
+    .oticks {
+      margin: 0rem auto 0 auto !important; } }
+
+.oticksinner {
+  justify-content: center; }
+
+.o1 {
+  margin: 4rem auto 0 auto !important; }
+
+.o2 {
+  margin: 4rem auto 0 auto !important; }
+
+.oh2git {
+  margin-top: 2rem; }
+
+.ocenter {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.ovideo {
+  width: 80% !important;
+  margin: 4rem auto 0 auto !important;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .ovideo {
+      width: 100% !important;
+      margin: 0rem auto 0 auto !important; } }
+
+.ovideoglitch {
+  width: 80% !important;
+  margin: 4rem auto 0 auto !important;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .ovideoglitch {
+      width: calc(100% - 4rem) !important;
+      padding: 0 2rem;
+      margin: 0rem auto 0 auto !important; } }
 
 .wideRight > *, .wideLeft > * {
   fill: #0079FF;
@@ -227,9 +302,9 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  border-radius: 100px;
+  border-radius: 4px;
   background-color: #0079FF;
-  padding: 0.9rem 1.7rem 1.1rem 1.9rem;
+  padding: 1.3rem 1.7rem 1.3rem 1.9rem;
   transition: all 0.6s;
   cursor: pointer;
   text-transform: uppercase;
@@ -624,6 +699,12 @@ h2 {
     .zenscrollParents {
       margin-bottom: 0rem; } }
 
+.zenscrollOffer {
+  margin-bottom: 0rem; }
+  @media screen and (min-width: 768px) {
+    .zenscrollOffer {
+      margin-bottom: 0rem; } }
+
 .p2video {
   margin-top: 6rem; }
   @media screen and (min-width: 768px) {
@@ -700,30 +781,31 @@ h2 {
         margin-top: 2.4rem; } }
   .year .bold {
     font-weight: 600; }
-  .year .ticks {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-bottom: 4rem; }
-    @media screen and (min-width: 768px) {
-      .year .ticks {
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2rem; } }
-    .year .ticks__inner {
-      display: flex;
-      align-items: center;
-      margin-top: 1.6rem; }
-      .year .ticks__inner:first-child {
-        margin-top: 3rem; }
-        @media screen and (min-width: 768px) {
-          .year .ticks__inner:first-child {
-            margin-top: 1.6rem; } }
-      .year .ticks__inner-text {
-        font-size: 1.5rem;
-        margin-left: .8rem; }
-        @media screen and (min-width: 768px) {
-          .year .ticks__inner-text {
-            font-size: 1.7rem;
-            margin-left: 1.6rem; } }
+
+.ticks {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 4rem; }
+  @media screen and (min-width: 768px) {
+    .ticks {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 2rem; } }
+  .ticks__inner {
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem; }
+    .ticks__inner:first-child {
+      margin-top: 3rem; }
+      @media screen and (min-width: 768px) {
+        .ticks__inner:first-child {
+          margin-top: 1.6rem; } }
+    .ticks__inner-text {
+      font-size: 1.5rem;
+      margin-left: .8rem; }
+      @media screen and (min-width: 768px) {
+        .ticks__inner-text {
+          font-size: 1.7rem;
+          margin-left: 1.6rem; } }
 
 .parents {
   background: #ffffff;
@@ -739,6 +821,9 @@ h2 {
 .gitOuter {
   width: 100%;
   padding: 7rem 0 0rem 0; }
+  @media screen and (max-width: 768px) {
+    .gitOuter {
+      padding: 4rem 0 0rem 0; } }
 
 .gitOuterParents {
   width: 100%;
@@ -824,8 +909,7 @@ h2 {
   .git form {
     width: 100%; }
   .git__body {
-    background-color: #ffffff;
-    margin-top: 4rem; }
+    background-color: #ffffff; }
     .git__body-inner {
       width: 100%;
       display: flex;

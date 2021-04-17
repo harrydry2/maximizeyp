@@ -1,0 +1,77 @@
+extends main
+
+include mixins/banner2
+include mixins/header2
+include mixins/button
+include mixins/button1
+include mixins/wide
+include mixins/git
+include mixins/monial
+include mixins/blog
+include mixins/footer
+include mixins/mobilemenu
+
+block content
+  +banner2()
+  +mobilemenu()
+  +header2()
+  .home.offerJS
+    .container.o1
+      h2.ocenter Book this term – Get FREE bonus webinar for parents
+      h1.offerh1.ocenter High-impact Study Skills for Students in Years 7 - 13
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer1.mp4" class="p1video ovideo" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="true" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/homePoster.jpg")
+    .video__subtitle
+      //- .video__subtitle-text Tap for volume
+      .video__subtitle-icon!=icon("volume")
+    .offerh3 Bespoke study skills for each of the secondary schools years:
+    .ticks.oticks
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Increase motivation
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Better study practice
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Effective revision strategies
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Build resilience
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Stress management
+      .ticks__inner.oticksinner
+        !=icon("check")
+        .ticks__inner-text Raise attainment
+    .container
+      h2.ocenter And you'll also get ...
+      h1.offerh1.ocenter FREE bonus webinar for parents – usually £350
+      video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2.mp4" class="p1video ovideo" playsinline="playsinline" loop="loop" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2poster.jpg")
+      .offerh3 Our live 60 minute webinar is a great opportunity for parents to learn about the skills their children need to succeed and how they can play an active role in supporting them.
+      .ticks.oticks
+        .ticks__inner.oticksinner
+          !=icon("check")
+          .ticks__inner-text Incredibly easy to organise
+        .ticks__inner.oticksinner
+          !=icon("check")
+          .ticks__inner-text Hosted on our own platform
+        .ticks__inner.oticksinner
+          !=icon("check")
+          .ticks__inner-text Suitable for parents of all years
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3.mp4" class="p1video ovideoglitch" playsinline="playsinline" loop="loop" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3poster.jpg")
+    .container.o2
+      h1.ocenter Trusted by schools throughout the UK
+      .offerPhotos
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm1.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm2.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm3.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm4.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm5.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm6.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm7.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm8.jpg", alt="")
+        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm9.jpg", alt="")
+    //- video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/home6.mp4" class="p2video" playsinline="playsinline" preload="auto" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/home99poster.jpg" onclick="this.paused ? this.play() : this.pause();")
+    //- .video__subtitle2 Maximize at Cardinal Vaughan Memorial School
+    +git()
+  +footer()

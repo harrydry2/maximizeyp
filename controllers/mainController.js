@@ -20,6 +20,17 @@ exports.thankyou = async (req, res) => {
   });
 };
 
+exports.offer = async (req, res) => {
+  res.render("offer", {
+    card: {
+      title: "Maximize Your Potential: Motivational study skills for schools",
+      slug: "offer",
+      desc: "High-impact study skills seminars for students in Years 7 – 13",
+      img: "Schools/MaxImg2.jpg"
+    }
+  });
+};
+
 exports.parents = async (req, res) => {
   res.render("parents", {
     card: {

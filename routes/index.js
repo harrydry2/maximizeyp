@@ -16,6 +16,7 @@ router.get("/testimonials", mainController.testimonials);
 router.get("/blog", mainController.blog);
 router.get("/about", mainController.about);
 router.get("/thank-you", mainController.thankyou);
+router.get("/offer", mainController.offer);
 
 // blogs
 router.get("/blog/how-to-live-the-focused-life", mainController.blog1);

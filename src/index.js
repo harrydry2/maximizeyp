@@ -22,6 +22,22 @@ if ($(".homeJS")) {
   });
 }
 
+if ($(".offerJS")) {
+  mailSubmitFromHome();
+  $(".video__subtitle").on("click", () => {
+    if ($(".p1video").muted === true) {
+      $(".p1video").muted = false;
+    } else {
+      $(".p1video").muted = true;
+    }
+  });
+  const button = $(".zenscrollOffer");
+  const git = $(".gitOuter");
+  button.on("click", () => {
+    git.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
 if ($(".parentsJS")) {
   mailSubmitFromHome();
   // $(".video__subtitle").on("click", () => {
@@ -42,6 +58,8 @@ if ($(".parentsJS")) {
   });
 }
 
-if (window.innerWidth <= 1023) {
-  mobileMenu();
+if (!$(".offerJS")) {
+  if (window.innerWidth <= 1023) {
+    mobileMenu();
+  }
 }
