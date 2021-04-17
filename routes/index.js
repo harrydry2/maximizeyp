@@ -4,7 +4,7 @@ const router = express.Router();
 const mainController = require("../controllers/mainController");
 const emailController = require("../controllers/emailController");
 
-router.get("/", mainController.home);
+router.get("/", mainController.offer);
 router.get("/online", mainController.parents);
 router.get("/year7&8", mainController.year7);
 router.get("/year9", mainController.year9);
