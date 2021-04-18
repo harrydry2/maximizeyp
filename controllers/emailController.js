@@ -4,7 +4,7 @@ var nodemailer = require("nodemailer");
 
 exports.subscribe = async (req, res) => {
   // const { name, email, school, desc } = req.body;
-  const { email, school } = req.body;
+  const { email, school, desc } = req.body;
   try {
     const mongoemail = new Email(req.body).save();
     const transporter = nodemailer.createTransport({
@@ -23,6 +23,7 @@ exports.subscribe = async (req, res) => {
         REPLY TO SCHOOLS EMAIL<br><br>
         Email: ${email} <br><br>
         School: ${school} <br><br>
+        Message: ${desc}
       `
     };
     transporter.sendMail(mailOptions, function(err, info) {
@@ -36,4 +37,3 @@ exports.subscribe = async (req, res) => {
 };
 
 // Name: ${name} <br><br>
-// Message: ${desc}
