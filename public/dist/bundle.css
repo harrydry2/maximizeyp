@@ -175,6 +175,9 @@ h2 {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important; }
+  .ocenter .bold {
+    font-weight: bold;
+    border-bottom: 2px solid black; }
 
 .ovideo {
   width: 80% !important;
