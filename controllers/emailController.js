@@ -4,6 +4,7 @@ var nodemailer = require("nodemailer");
 
 exports.subscribe = async (req, res) => {
   // const { name, email, school, desc } = req.body;
+  console.log("jeffery");
   const { email, school, desc } = req.body;
   try {
     const mongoemail = new Email(req.body).save();
