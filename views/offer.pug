@@ -17,7 +17,7 @@ block content
   +header2()
   .home.offerJS
     .container.o1
-      h2.ocenter Book this term –&nbsp;
+      h2.ocenter
         span.bold 25% discount
         |&nbsp;for all NEW schools
       h1.offerh1.ocenter High-Impact Study Skills for Students in Years 7 - 13
@@ -45,12 +45,13 @@ block content
       .ticks__inner.oticksinner
         !=icon("check")
         .ticks__inner-text Raise attainment
+    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3.mp4" class="p1video ovideoglitch" playsinline="playsinline" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3poster.jpg" onclick="this.paused? this.play() : this.pause()")
     .container
       h2.ocenter And, for the&nbsp;
         span.bold first five
         |&nbsp;NEW schools who book, we are also offering ...
-      h1.offerh1.ocenter FREE bonus webinar for parents – usually £350
-      video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2.mp4" class="p1video ovideo" playsinline="playsinline" loop="loop" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2poster.jpg")
+      h1.offerh1.ocenter Webinars for Parents
+      video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2.mp4" class="p1video ovideo" playsinline="playsinline" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer2poster.jpg" onclick="this.paused? this.play() : this.pause()")
       .offerh3 Our live 60 minute webinar is a great opportunity for parents to learn about the skills their children need to succeed and how they can play an active role in supporting them.
       .ticks.oticks
         .ticks__inner.oticksinner
@@ -65,7 +66,6 @@ block content
         .ticks__inner.oticksinner
           !=icon("check")
           .ticks__inner-text Amazing feedback
-    video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3.mp4" class="p1video ovideoglitch" playsinline="playsinline" loop="loop" controls="true" preload="metadata" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/offer3poster.jpg")
     .container.o2
       h1.ocenter Trusted by schools throughout the UK
       .offerPhotos
@@ -75,9 +75,9 @@ block content
         img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm4.jpg", alt="")
         img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm5.jpg", alt="")
         img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm6.jpg", alt="")
-        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm7.jpg", alt="")
-        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm8.jpg", alt="")
-        img(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm9.jpg", alt="")
+        img.offerPhotosmob(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm7.jpg", alt="")
+        img.offerPhotosmob(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm8.jpg", alt="")
+        img.offerPhotosmob(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/nm9.jpg", alt="")
     //- video(src="https://maximizeyp.s3.eu-west-2.amazonaws.com/home6.mp4" class="p2video" playsinline="playsinline" preload="auto" poster="https://maximizeyp.s3.eu-west-2.amazonaws.com/home99poster.jpg" onclick="this.paused ? this.play() : this.pause();")
     //- .video__subtitle2 Maximize at Cardinal Vaughan Memorial School
     +git()

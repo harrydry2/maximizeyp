@@ -120,10 +120,17 @@ h2 {
   position: relative;
   height: 100%; }
 
+@media screen and (max-width: 768px) {
+  .offerPhotosmob {
+    display: none; } }
+
 .offerPhotos {
   display: flex;
   flex-wrap: wrap;
   margin-top: 4rem; }
+  @media screen and (min-width: 768px) {
+    .offerPhotos-mob {
+      display: none; } }
   .offerPhotos img {
     margin: 0.8rem;
     width: 30rem;
@@ -176,8 +183,7 @@ h2 {
   margin-left: auto !important;
   margin-right: auto !important; }
   .ocenter .bold {
-    font-weight: bold;
-    border-bottom: 2px solid black; }
+    font-weight: bold; }
 
 .ovideo {
   width: 80% !important;
@@ -190,13 +196,13 @@ h2 {
 
 .ovideoglitch {
   width: 80% !important;
-  margin: 4rem auto 0 auto !important;
+  margin: 4rem auto 4rem auto !important;
   display: flex; }
   @media screen and (max-width: 768px) {
     .ovideoglitch {
       width: calc(100% - 4rem) !important;
       padding: 0 2rem;
-      margin: 0rem auto 0 auto !important; } }
+      margin: 0rem auto 4rem auto !important; } }
 
 .wideRight > *, .wideLeft > * {
   fill: #0079FF;
