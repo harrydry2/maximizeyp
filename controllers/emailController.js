@@ -12,7 +12,7 @@ exports.subscribe = async (req, res) => {
       service: "gmail",
       auth: {
         user: "harrydryofficial@gmail.com",
-        pass: "DavidLuiz4"
+        pass: "dilpiyfzatlkvxid"
       }
     });
     const mailOptions = {
